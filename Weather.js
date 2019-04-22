@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {LinearGradient} from "expo";
-import {Ionicons} from "@expo/vector-icons";
+import {MaterialCommunityIcons} from "@expo/vector-icons";
 import PropTypes from "prop-types";
 
 
@@ -59,7 +59,7 @@ function Weather({ temp, weatherName }){
     return(
         <LinearGradient colors={weatherCases[weatherName].colors} style={styles.container}>
                 <View style={styles.upper}>
-                    <Ionicons color="white" size={144} name={weatherCases[weatherName].icon} />
+                    <MaterialCommunityIcons color="white" size={144} name={weatherCases[weatherName].icon} />
                     <Text style={styles.temp}>{temp}˚</Text>
                 </View>
                 <View style={styles.lower}>
