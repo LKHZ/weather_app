@@ -43,7 +43,7 @@ export default class App extends React.Component {
         <StatusBar hidden={true}/>
         {isLoaded ? <Weather weatherName={name} temp={temperature}/> : (
           <View style={styles.loading}>
-            <Text style={styles.loadingText}>Getting the fucking weather</Text>
+            <Text style={styles.loadingText}>Getting the Weather App</Text>
             {error ? <Text style={styles.errorText}>{error}</Text> : null}
           </View>
         )}
